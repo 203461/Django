@@ -11,18 +11,29 @@ pip install markdown
 ```bash
 pip install django-filter
 ```
-pip install python-dotenv
-```
-pip install drf-extra-fields
-```
-pip install pillow
 
 ## Agregar la libretia a INSTALLED_APPS en settings
 ```bash
 'rest_framework',
-```# proyecto
-"# proyecto" 
+```
 
-## Instalamos python-dotenv para ocultar credenciales importantes
+## Instalamos python-dotenv para ocultar credenciales importantes 
+```bash
 pip install python-dotenv
+```
+<!-- Se Agrega a settings para el uso de la libreria-->
+```bash
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+```
+
+## Instalamos Pillow para la gestión de las imagenes
+```bash
+pip install Pillow
+```
+<!-- Agregamos el nuevo componente a settings  -->
+```bash
+'loadImg',
+```
